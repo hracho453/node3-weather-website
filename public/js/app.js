@@ -1,4 +1,3 @@
-
 const weatherForm = document.querySelector('form');
 const search = document.querySelector('#search');
 const messageOne = document.querySelector('#massage-1'); // Correct ID spelling if needed
