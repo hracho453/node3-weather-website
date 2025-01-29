@@ -1,4 +1,3 @@
-
 const weatherForm = document.querySelector('form');
 const search = document.querySelector('#search');
 const messageOne = document.querySelector('#massage-1'); // Correct ID spelling if needed
@@ -12,7 +11,7 @@ weatherForm.addEventListener('submit', (e) => {
   messageOne.textContent = 'Loading...';
   messageTwo.textContent = '';
 
-  fetch(`http://localhost:3000/weather?address=${location}`)
+  fetch(`/weather?address=${location}`)
     .then((response) => response.json())
     .then((data) => {
       if (data.error) {
